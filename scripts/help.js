@@ -7,11 +7,15 @@ backbtn.addEventListener("click", toggleHelp);
 
 if (!helpcontainer.classList.contains("active")){
     helpcontainer.style.top = `calc(100vh + 400px)`;
+} else {
+    helpcontainer.style.top = `0px`;
 }
 
 function toggleHelp(){
     helpcontainer.classList.toggle("active")
     if (!helpcontainer.classList.contains("active")){
         helpcontainer.style.top = `calc(100vh + 400px)`;
+    } else {
+        helpcontainer.style.top = `0px`;
     }
 }
