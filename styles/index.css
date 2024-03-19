@@ -1,0 +1,118 @@
+html, body{
+    height: 100%;
+    overflow: hidden;
+}
+#base {
+    height: 100vh;
+}
+#helpbtn {
+    margin-top: -0.05rem;
+    color: #333333;
+    font-size: 1.5rem;
+    font-weight: 1000;
+    background: transparent;
+    cursor: pointer;
+    border: none;
+}
+#logo {
+    display: block;
+    margin: auto;
+    margin-top: 8vh;
+    height: 50vh;
+}
+#endlessbtn,
+#custombtn{
+    display: block;
+    margin: auto;
+    width: 25vh;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-decoration: none;
+    text-align: center;
+    border: solid 2px #3498db;
+    border-radius: 25px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#endlessbtn{
+    background-color: #3498db;
+    margin-top: 5vh;
+    transition: all 0.3s ease;
+}
+#custombtn  {
+    margin-top: 30px;
+    background-color: transparent;
+
+}
+@media (hover: hover){
+    #endlessbtn:hover,
+    #custombtn:hover{
+        border-radius: 0px;
+    }
+}
+
+#version {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    text-align: right;
+    color: #777777;
+}
+
+#helpcontainer {
+    position: absolute;
+    z-index: 99;
+    top: 200vh;
+    height: 100vh;
+    width: 100vw;
+    background-color: #1C1C1C;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    transition: all 0.4s ease;
+}
+#helpcontainer.active {
+    top: 0;
+}
+#backbtn {
+    z-index: 99;
+    margin-top: -0.05rem;
+    color: #333333;
+    font-size: 1.5rem;
+    font-weight: 1000;
+    background: transparent;
+    cursor: pointer;
+    border: none;
+}
+#helpcontainer .content {
+    padding: 4vw;
+    width: 80vw;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -55%);
+}
+#helpcontainer .content h2 {
+    margin-top: 3vh;
+    color: #3498db;
+    font-size: 2rem;
+    font-weight: 800;
+}
+#helpcontainer .content p {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+#helpcontainer .content h3 {
+    color: #FFFFFF;
+    font-size: 1.4rem;
+    font-weight: 800;
+    padding-top: 2vh;
+    margin-bottom: 0;
+}

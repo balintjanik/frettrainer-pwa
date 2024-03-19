@@ -1,0 +1,208 @@
+#backbtn {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 99;
+    color: #333333;
+    font-size: 1.5rem;
+    font-weight: 1000;
+    background: transparent;
+    cursor: pointer;
+    border: none;
+}
+h2 {
+    margin: 5vh;
+    text-align: center;
+    color: #3498db;
+    font-size: 2rem;
+    font-weight: 800;
+}
+h3 {
+    margin-top: 4rem;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 1.4rem;
+}
+form {
+    margin: auto;
+    width: 60vw;
+    text-align: center;
+}
+label {
+    color: #FFFFFF;
+    font-size: 1.4rem;
+}
+select {
+    width: 100%;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 0.55rem;
+    border-style: none;
+    border-radius: 10000rem;
+    background-color: #333333;
+    color: #FFFFFF;
+}
+input[type="number"] {
+    width: 100%;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 0.5rem;
+    border-style: none;
+    border-radius: 10000rem;
+    background-color: #333333;
+    color: #FFFFFF;
+    transform: translate(-0.5rem);
+}
+#notesperlvlinp {
+    margin-bottom: 0;
+}
+
+button {
+    display: block;
+    margin: auto;
+    margin-top: 3rem;
+    width: 25vh;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-decoration: none;
+    text-align: center;
+    background-color: #3498db;
+    color: #FFFFFF;
+    border-radius: 1.8rem;
+    border-style: none;
+    max-width: 15rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+@media (hover: hover){
+    button:hover {
+        border-radius: 0;
+    }
+}
+#startbtn{
+    margin-bottom: 5rem;
+}
+
+#checkcontainer {
+    width: 15rem;
+    margin: auto;
+    text-align: center;
+}
+.stringCheckbox{
+    margin-top: 1.2rem;
+}
+.notes {
+    width: 7rem;
+    margin: auto;
+    margin-top: -0.3rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    border: solid 2px #3498db;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top: none;
+    padding: 1rem;
+    padding-bottom: 0.4rem;
+    height: 9rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.notes.hidden {
+    padding: 0 1rem;
+    border-bottom: none;
+    height: 0px;
+    transition: all 0.3s ease;
+}
+.notes label {
+    font-size: 1.1rem;
+}
+#checkcontainer label {
+    margin-bottom: 0.2rem;
+}
+input[type="checkbox"] {
+    appearance: none; /* Remove default appearance */
+    -webkit-appearance: none; /* For older versions of Safari/Chrome */
+    width: 1.2rem; /* Set the width of the checkbox */
+    height: 1.2rem; /* Set the height of the checkbox */
+    border: 2px solid #333; /* Set border color and width */
+    border-radius: 5px; /* Set border radius for rounded edges */
+    outline: none; /* Remove focus outline */
+    margin-right: 5px; /* Add some spacing to the right */
+    vertical-align: middle;
+    margin: 0.6rem 0.5rem 1rem 0.5rem;
+    cursor: pointer; /* Change cursor on hover */
+    transition: all 0.3s ease;
+}
+
+/* Style the checkbox when it is checked */
+input[type="checkbox"]:checked {
+    background-color: #3498db; /* Change background color when checked */
+    border-color: #3498db; /* Change border color when checked */
+}
+.stringlbl input[type="checkbox"]{
+    border: none;
+    height: 0.8rem;
+}
+.stringlbl input[type="checkbox"]:checked{
+    background-color: transparent;
+}
+
+
+.stringlbl{
+    z-index: 2;
+    margin: auto;
+    display: block;
+    border: solid 2px #3498db;
+    border-radius: 3rem;
+    background-color: #1c1c1c;
+    width: 20vh;
+    padding-top: 0.2rem;
+    padding-left: 2.2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transform: translate3d(0, 0, 0);
+    transition: all 0.3s ease;
+}
+@media (hover: hover){
+    .stringlbl:hover{
+        border-radius: 0;
+    }
+}
+.stringlbl.checked {
+    background-color: #3498db;
+}
+.line {
+    z-index: 1;
+    width: 150vw;
+    margin-left: -50vw;
+    margin-top: -1.6rem;
+    margin-bottom: 1.5rem;
+    height: 2px;
+    background-color: #3498db;
+}
+#line6,
+#line5{
+    height: 3px;
+}
+#line4,
+#line3 {
+    height: 2px;
+}
+#line2,
+#line1 {
+    height: 1px;
+}
+
+.presetbtn {
+    margin-top: 0.8rem;
+    background-color: #333333;
+}
+
+

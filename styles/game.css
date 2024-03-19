@@ -1,0 +1,151 @@
+html, body{
+    height: 100%;
+    overflow: hidden;
+}
+body {
+    background-color: #1c1c1c;
+}
+
+.roundbtncontainer{
+    margin-top: 3dvh;
+}
+#backbtn {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 99;
+    color: #333333;
+    font-size: 1.5rem;
+    font-weight: 1000;
+    background: transparent;
+    cursor: pointer;
+    border: none;
+}
+
+#progresscontainer {
+    margin-top: 3dvh;
+    width: 100vw;
+}
+#progressbar {
+    margin: auto;
+    width: 50dvw;
+    height: 0.4rem;
+    background-color: #777777;
+    border-radius: 0.2rem;
+}
+#progression {
+    width: 0vw;
+    height: 0.4rem;
+    background-color: #3498db;
+    border-radius: 0.2rem;
+    transition: all 0.3s ease;
+}
+#lvllabel{
+    margin-top: 0.6rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #777777;
+}
+
+#visualizer {
+    /*background-color: #222222;*/
+    width: 100dvw;
+    margin: 0.5rem 0;
+    height: 7rem;
+}
+
+#base {
+    z-index: 1;
+    background-color: #222222;
+    width: 14rem;
+    height: 14rem;
+    border-radius: 7rem;
+    margin: auto;
+    transition: background-color 0.5s ease-out;
+
+}
+#base.active {
+    background: #2ecc71;
+    transition-duration: 0s;
+}
+#base h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3498db;
+    text-align: center;
+    margin: auto;
+    padding-top: 3.2rem;
+    font-size: 5.4rem;
+    transition: background-color 0.5s ease-out;
+}
+#base.active h1 {
+    color: #FFFFFF;
+    transition-duration: 0s;
+}
+#base p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #777777;
+    margin: auto;
+    margin-top: -0.6rem;
+    max-width: 11rem;
+    text-align: center;
+    font-size: 1.1rem;
+}
+#startcontainer {
+    z-index: 2;
+    width: 14rem;
+    height: 14rem;
+    border-radius: 4rem;
+    border-style: none;
+    margin: auto;
+    margin-top: -13.9rem;
+}
+#start {
+    width: 100%;
+    height: 100%;
+    border-radius: 7rem;
+    background-color: #222222;
+    color: #3498db;
+    font-size: 3.2rem;
+    font-weight: 800;
+    border-style: none;
+    cursor: pointer;
+}
+
+
+#stringscontainer{
+    margin-top: 5dvh;
+}
+#stringscontainer .string{
+    width: 100dvw;
+    height: 1px;
+    background-color: #333333;
+}
+#stringscontainer #s6,
+#stringscontainer #s5 {
+    height: 3px;
+}
+#stringscontainer #s4,
+#stringscontainer #s3 {
+    height: 2px;
+}
+#stringscontainer #s2,
+#stringscontainer #s1 {
+    height: 1px;
+}
+
+#stringscontainer .stringcirc {
+    height: 4.5dvh;
+    width: 4.5dvh;
+    margin: -2.25dvh auto 3dvh 16dvw;
+    background-color: #333333;
+    border-radius: 2.25dvh;
+    color: #777777;
+    text-align: center;
+    font-size: 3dvh;
+    font-weight: 600;
+}
+#stringscontainer .stringcirc div {
+    padding-top: 0.5dvh;
+}

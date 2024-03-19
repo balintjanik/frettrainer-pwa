@@ -1,0 +1,33 @@
+html, body {
+    overflow-x: hidden;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1C1C1C;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.max-width {
+    max-width: 1300px;
+    margin: auto;
+    padding: 3vh 4vw;
+    background-color: #1C1C1C;
+}
+.roundbtncontainer {
+    position: absolute;
+    right: 4vw;
+    border: solid 5px #333333;
+    background: transparent;
+    border-radius: 40px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+@media (hover: hover){
+    .roundbtncontainer:hover {
+        border-radius: 0px;
+    }
+}
