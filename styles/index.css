@@ -76,7 +76,7 @@ html, body{
     transition: all 0.4s ease;
 }
 #helpcontainer.active {
-    top: 0;
+    top: 0px;
 }
 #backbtn {
     z-index: 99;
