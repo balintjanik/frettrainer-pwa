@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <meta name="theme-color" content="#1c1c1c">
+    <title>Fret Trainer</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/game.css">
+</head>
+<body>
+    <div class="roundbtncontainer">
+        <button id="backbtn">X</button>
+    </div>
+    <div id="progresscontainer">
+        <div id="progressbar" style="opacity: 0;">
+            <div id="progression"></div>
+        </div>
+        <div id="lvllabel" style="opacity: 0;">LEVEL</div>
+    </div>
+    <canvas id="visualizer">
+
+    </canvas>
+    <div id="base">
+        <h1 id="note">C#</h1>
+        <p id="notehelp">2nd string, 2nd fret</p>
+    </div>
+    <div id="startcontainer">
+        <button id="start">
+            GO
+        </button>
+    </div>
+
+    <div id="stringscontainer">
+        <div id="s1" class="string"></div>
+        <div id="scirc1" class="stringcirc"><div>1</div></div>
+        <div id="s2" class="string"></div>
+        <div id="scirc2" class="stringcirc"><div>2</div></div>
+        <div id="s3" class="string"></div>
+        <div id="scirc3" class="stringcirc"><div>3</div></div>
+        <div id="s4" class="string"></div>
+        <div id="scirc4" class="stringcirc"><div>4</div></div>
+        <div id="s5" class="string"></div>
+        <div id="scirc5" class="stringcirc"><div>5</div></div>
+        <div id="s6" class="string"></div>
+        <div id="scirc6" class="stringcirc"><div>6</div></div>
+        <button id="test" style="display: none;">Next</button><!--this button is only for testing-->
+    </div>
+</body>
+<script src="game/NoSleep.min.js"></script>
+<script type="module" src="game/strings.js"></script>
+<script type="module" src="game/gamehandler.js"></script>
+<script type="module" src="game/audioprocess.js"></script>
+<script src="scripts/portraitfix.js"></script>
+<script>
+    var noSleep = new NoSleep();
+    
+    function enableNoSleep() {
+      noSleep.enable();
+    }
+
+    enableNoSleep();
+</script>
+</html>

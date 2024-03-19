@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <link rel="manifest" href="manifest.json">
+    <title>Fret Trainer</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link href='https://fonts.googleapis.com/css?family=Krona One' rel='stylesheet'>
+    
+</head>
+<body>
+    <div id="base" class="max-width">
+        <div class="roundbtncontainer">
+            <button id="helpbtn">?</button>
+        </div>
+        <img id="logo" src="data/logo_text_background.png" alt="Fret Trainer">
+        <a id="endlessbtn" href="endlesssettings.html">ENDLESS</a>
+        <a id="custombtn" href="customsettings.html">CUSTOM</a>
+        <div id="version">Version 1.3.3</div>
+    </div>
+    <div id="helpcontainer">
+        <div class="max-width">
+            <div class="roundbtncontainer">
+                <button id="backbtn">X</button>
+            </div>
+            <div class="content">    
+                <h2>HELP</h2>
+                <h3>ENDLESS</h3>
+                <p>Start a simple practice with whole notes on one string. Level up to add half notes, as well. New strings join as you progress, adding more challenge with each level. The number of notes per level, and the starting level is up to You! Keep playing, and keep leveling up!</p>
+                <h3>CUSTOM</h3>
+                <p>This mode is all about you! Pick the strings, choose note types, and set your own pace. No levels, just a personalized practice session crafted to your liking</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="scripts/help.js"></script>
+<script src="scripts/portraitfix.js"></script>
+<script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/f5z688/frettrainer/sw.js', { scope: '/f5z688/frettrainer/' })
+          .then(registration => {
+            console.log('Service Worker registered with scope:', registration.scope);
+          })
+          .catch(error => {
+            console.error('Service Worker registration failed:', error);
+          });
+      });
+    }
+  </script>
+</html>

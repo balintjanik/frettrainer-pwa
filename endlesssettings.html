@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <meta name="theme-color" content="#1c1c1c">
+    <title>Fret Trainer - Endless - Settings</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/settings.css">
+    <style>
+        html, body{
+            height: 100vh;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div id="base" class="max-width">
+        <div class="roundbtncontainer">
+            <button id="backbtn">X</button>
+        </div>
+        <h2>ENDLESS</h2>
+        <form>
+            <label id="startlvllbl" for="startlvl">Starting level</label><br>
+            <select name="startlvl" id="startlvlinp"></select><br>
+            <label id="notesperlvllbl" for="notesperlvl">Notes per level</label><br>
+            <select name="notesperlvl" id="notesperlvlinp"></select><br>
+            <button type="button" id="startbtn">START</button>
+        </form>
+    </div>
+</body>
+<script src="scripts/startendless.js"></script>
+<script src="scripts/portraitfix.js"></script>
+
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <meta name="theme-color" content="#1c1c1c">
+    <title>Fret Trainer - Custom - Settings</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/settings.css">
+</head>
+<body>
+    <div id="base" class="max-width">
+        <div class="roundbtncontainer">
+            <button id="backbtn">X</button>
+        </div>
+        <h2>CUSTOM</h2>
+        <form>
+            <h3>PRESETS</h3>
+            <div id="presetcontainer">
+                <button type="button" class="presetbtn" id="presetempty">EMPTY</button>
+                <button type="button" class="presetbtn" id="preseteasy">EASY</button>
+                <button type="button" class="presetbtn" id="presetmedium">MEDIUM</button>
+                <button type="button" class="presetbtn" id="presethard">HARD</button>
+            </div>
+            <h3>SPECIAL SETTINGS</h3>
+            <div id="checkcontainer">
+                
+                <label class="stringlbl" id="stringlbl1">
+                    1<input type="checkbox" id="cb1" class="stringCheckbox"><br>
+                </label>
+                <div class="line" id="line1"></div>
+                
+                <div id="notes1" class="notes hidden">
+                    <label>
+                        <input class="notetype" type="checkbox" name="difficulty1" value="whole"> Natural<br>
+                    </label>
+                    <label>
+                        <input class="notetype" type="checkbox" name="difficulty1" value="half"> Sharp<br>
+                    </label>
+                    <label>
+                        <input class="notetype" type="checkbox" name="difficulty1" value="high"> High<br>
+                    </label>
+                </div>
+
+                <label class="stringlbl" id="stringlbl2">
+                    2<input type="checkbox" id="cb2" class="stringCheckbox"><br>
+                </label>
+                <div class="line" id="line2"></div>
+                
+                <div id="notes2" class="notes hidden">
+                    <label>
+                        <input class="notetype" type="checkbox" name="difficulty2" value="whole"> Natural<br>
+                    </label>
+                    <label>
+                        <input class="notetype" type="checkbox" name="difficulty2" value="half"> Sharp<br>
+                    </label>
+                    <label>
+                        <input class="notetype" type="checkbox" name="difficulty2" value="high"> High<br>
+                    </label>
+                </div>
+
+                <label class="stringlbl" id="stringlbl3">
+                    3<input type="checkbox" id="cb3" class="stringCheckbox"><br>
+                </label>
+                <div class="line" id="line3"></div>
+                
+                <div id="notes3" class="notes hidden">
+                    <label>
+                        <input class="notetype" type="checkbox" name="difficulty3" value="whole"> Natural<br>
+                    </label>
+                    <label>
+                        <input class="notetype" type="checkbox" name="difficulty3" value="half"> Sharp<br>
+                    </label>
+                    <label>
+                        <input class="notetype" type="checkbox" name="difficulty3" value="high"> High<br>
+                    </label>
+                </div>
+
+                <label class="stringlbl" id="stringlbl4">
+                    4<input type="checkbox" id="cb4" class="stringCheckbox"><br>
+                </label>
+                <div class="line" id="line4"></div>
+                
+                <div id="notes4" class="notes hidden">
+                    <label>
+                        <input class="notetype" type="checkbox" name="difficulty4" value="whole"> Natural<br>
+                    </label>
+                    <label>
+                        <input class="notetype" type="checkbox" name="difficulty4" value="half"> Sharp<br>
+                    </label>
+                    <label>
+                        <input class="notetype" type="checkbox" name="difficulty4" value="high"> High<br>
+                    </label>
+                </div>
+
+                <label class="stringlbl" id="stringlbl5">
+                    5<input type="checkbox" id="cb5" class="stringCheckbox"><br>
+                </label>
+                <div class="line" id="line5"></div>
+                
+                <div id="notes5" class="notes hidden">
+                    <label>
+                        <input class="notetype" type="checkbox" name="difficulty5" value="whole"> Natural<br>
+                    </label>
+                    <label>
+                        <input class="notetype" type="checkbox" name="difficulty5" value="half"> Sharp<br>
+                    </label>
+                    <label>
+                        <input class="notetype" type="checkbox" name="difficulty5" value="high"> High<br>
+                    </label>
+                </div>
+
+                <label class="stringlbl" id="stringlbl6">
+                    6<input type="checkbox" id="cb6" class="stringCheckbox"><br>
+                </label>
+                <div class="line" id="line6"></div>
+                
+                <div id="notes6" class="notes hidden">
+                    <label>
+                        <input class="notetype" type="checkbox" name="difficulty6" value="whole"> Natural<br>
+                    </label>
+                    <label>
+                        <input class="notetype" type="checkbox" name="difficulty6" value="half"> Sharp<br>
+                    </label>
+                    <label>
+                        <input class="notetype" type="checkbox" name="difficulty6" value="high"> High<br>
+                    </label>
+                </div>
+            </div>
+            <button type="button" id="startbtn">START</button>
+        </form>
+    </div>
+</body>
+<script src="scripts/startcustom.js"></script>
+<script src="scripts/portraitfix.js"></script>
+</html>

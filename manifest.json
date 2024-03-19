@@ -1,0 +1,30 @@
+{
+  "name": "Fret Trainer",
+  "short_name": "Fret",
+  "description": "Practice guitar notes with Fret Trainer! Get random notes, play them on your guitar, and check your accuracy instantly. Perfect for all skill levels.",
+  "start_url": ".",
+  "display": "fullscreen",
+  "background_color": "#1c1c1c",
+  "theme_color": "#1c1c1c",
+  "icons": [
+    {
+      "src": "data/icon.png",
+      "sizes": "1000x1000",
+      "type": "image/png"
+    }
+  ],
+  "id": "ft_application_v1_3_0",
+  "lang": "en",
+  "orientation": "portrait",
+  "categories": [
+    "education",
+    "entertainment",
+    "music",
+    "productivity"
+  ],
+  "display_override": [
+    "standalone",
+    "fullscreen",
+    "window-controls-overlay"
+  ]
+}
