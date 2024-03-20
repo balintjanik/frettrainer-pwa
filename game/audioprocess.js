@@ -85,10 +85,10 @@ function init() {
   
         canvasContext.beginPath();
   
-        var sliceWidth = WIDTH * 1 / 512/*bufferLength*/;
+        var sliceWidth = WIDTH * 1 / 512;
         var x = 0;
   
-        for(var i = 0; i < 512/*bufferLength*/; i++) {
+        for(var i = 0; i < 512; i++) {
   
           var v = dataArray[i] / 128.0;
           var y = v * HEIGHT/2;
@@ -133,7 +133,7 @@ function init() {
         currentNoteOctave = result.octave - 1;
   
         if (autoCorrelateValue === -1) {
-          //document.getElementById('note').innerText = 'Too quiet...';
+          // Input is too quiet
           return;
         }
         smoothingThreshold = 0;
@@ -162,17 +162,10 @@ function init() {
           return;
         }
         checkNote(currentNote, currentNoteOctave);
-        //document.getElementById('note').innerText = currentNote + " " + currentNoteOctave;
         console.log(currentNote + currentNoteOctave)
       }
   
-      //var displayValue = document.querySelector('input[name="display"]:checked').value
-      var displayValue = 'sine';
-      if (displayValue == 'sine') {
-        draw();
-      } else {
-        drawFrequency();
-      }
+      draw();
       drawNote();
     }
   }

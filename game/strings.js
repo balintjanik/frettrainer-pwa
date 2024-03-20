@@ -94,5 +94,4 @@ const string1 = [
     { note: "e5", type: "high", fret: 12 , string: 1}
 ]
 
-
 export { string6, string5, string4, string3, string2, string1 };
