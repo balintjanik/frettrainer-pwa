@@ -18,7 +18,7 @@
         <img id="logo" src="data/logo_text_background.png" alt="Fret Trainer">
         <a id="endlessbtn" href="endlesssettings.html">ENDLESS</a>
         <a id="custombtn" href="customsettings.html">CUSTOM</a>
-        <div id="version">Version 1.3.3</div>
+        <div id="version">Version 1.3.4</div>
     </div>
     <div id="helpcontainer">
         <div class="max-width">
@@ -40,7 +40,7 @@
 <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/f5z688/frettrainer/sw.js', { scope: '/f5z688/frettrainer/' })
+        navigator.serviceWorker.register('sw.js', { scope: '.' })
           .then(registration => {
             console.log('Service Worker registered with scope:', registration.scope);
           })

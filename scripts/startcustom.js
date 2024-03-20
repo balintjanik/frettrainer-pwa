@@ -116,7 +116,7 @@ function checkAtLeastOne(notes){
     const inputElements = notes.querySelectorAll('input[type="checkbox"]');
     const optionsCheckboxes = Array.from(inputElements);
 
-    // Ensure at least one option is checked
+    // ensure at least one option is checked
     const atLeastOneChecked = Array.from(optionsCheckboxes).some(optionCheckbox => optionCheckbox.checked);
     if (!atLeastOneChecked) {
         optionsCheckboxes[0].checked = true;

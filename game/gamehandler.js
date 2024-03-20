@@ -90,7 +90,6 @@ function getNextNoteEndless(){
     let newnote = pool[Math.floor(Math.random() * pool.length)];
     while(newnote.note == expectedNote.note){
         newnote = pool[Math.floor(Math.random() * pool.length)];
-        console.log("DUPLICATE AVOIDEDDDDDDDDDDDDDDDDDDDd")
     }
     return newnote;
 }
@@ -115,7 +114,6 @@ function clearStringDisps(){
 function checkNoteCustom(actualNote, actualNoteOctave){
     let actualData = formattedToData((actualNote + actualNoteOctave));
     if (!cooldown && actualData == expectedNote.note){
-        //const successAudio = new Audio('./data/success.mp3');
         successAudio.src = './data/success.mp3';
         successAudio.play();
         base.classList.add("active");
@@ -217,7 +215,7 @@ document.getElementById("backbtn").addEventListener("click", function(){
 let wakeLock = null;
 
 // Safari only let's audio play on user interaction, so we init the audio objects and play the sounds on start button press
-// We interrupt the play after 10 millisecs, so the sound cannot be heard, but IOS is outplayed
+// We interrupt the play after 10 millisecs, so the sound cannot be heard, but IOS now allows audio play later on
 document.getElementById("start").addEventListener("click", function(){
     successAudio = new Audio('./data/success.mp3');
     successAudio.play();

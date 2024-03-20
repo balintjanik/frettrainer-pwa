@@ -128,22 +128,20 @@ button {
 input[type="checkbox"] {
     appearance: none; /* Remove default appearance */
     -webkit-appearance: none; /* For older versions of Safari/Chrome */
-    width: 1.2rem; /* Set the width of the checkbox */
-    height: 1.2rem; /* Set the height of the checkbox */
-    border: 2px solid #333; /* Set border color and width */
-    border-radius: 5px; /* Set border radius for rounded edges */
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 2px solid #333;
+    border-radius: 5px;
     outline: none; /* Remove focus outline */
-    margin-right: 5px; /* Add some spacing to the right */
+    margin-right: 5px;
     vertical-align: middle;
     margin: 0.6rem 0.5rem 1rem 0.5rem;
-    cursor: pointer; /* Change cursor on hover */
+    cursor: pointer;
     transition: all 0.3s ease;
 }
-
-/* Style the checkbox when it is checked */
 input[type="checkbox"]:checked {
-    background-color: #3498db; /* Change background color when checked */
-    border-color: #3498db; /* Change border color when checked */
+    background-color: #3498db;
+    border-color: #3498db;
 }
 .stringlbl input[type="checkbox"]{
     border: none;
