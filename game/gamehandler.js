@@ -27,7 +27,6 @@ function checkNoteEndless(actualNote, actualNoteOctave){
     let actualData = formattedToData((actualNote + actualNoteOctave));
     if (!cooldown && actualData == expectedNote.note){
         successAudio.src = './data/success.mp3';
-        //const successAudio = new Audio('./data/success.mp3');
         successAudio.play();
         base.classList.add("active");
         cooldown = true;
@@ -42,7 +41,6 @@ function checkNoteEndless(actualNote, actualNoteOctave){
                     if (level != 24)
                     {
                         levelupAudio.src = './data/levelup.mp3';
-                        //const levelupAudio = new Audio('./data/levelup.mp3');
                         levelupAudio.play();
                         level++;
                         lvllabel.innerText = "LEVEL " + level;
@@ -67,7 +65,6 @@ function checkNoteEndless(actualNote, actualNoteOctave){
 function getNextNoteEndless(){
     let pool = []
 
-    // elvileg jo V
     let stringCount = Math.floor((level-1)/4)+1
     if (level % 4 == 0){
         for (let i = 0; i < stringCount; i++){
@@ -215,7 +212,7 @@ document.getElementById("backbtn").addEventListener("click", function(){
 let wakeLock = null;
 
 // Safari only let's audio play on user interaction, so we init the audio objects and play the sounds on start button press
-// We interrupt the play after 10 millisecs, so the sound cannot be heard, but IOS now allows audio play later on
+// we interrupt the play after 10 millisecs, so the sound cannot be heard, but IOS now allows audio play later on
 document.getElementById("start").addEventListener("click", function(){
     successAudio = new Audio('./data/success.mp3');
     successAudio.play();
