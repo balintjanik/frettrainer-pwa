@@ -1,4 +1,4 @@
-# Fret Trainer
+# Fret Trainer <br>https://frettrainer.hu
 
 This project is a simple fret trainer website, intended to be used as a progressive web application on mobile phones. Obviously, it does function on any platform, but the visuals and design is not necessarily responsive, or at least not in a visually pleasing way :)
 
