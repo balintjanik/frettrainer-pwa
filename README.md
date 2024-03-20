@@ -4,7 +4,7 @@ This project is a simple fret trainer website, intended to be used as a progress
 
 For more details about the app, see [About](#about) section.
 
-**Note:** The project (*v1.3.3*) in its current state was made for my dad for at home use, specifically for iOS, which required some strange solutions, as iOS is not too supportive of progressive web apps. These might be removed when the app is standardized for all platforms in later versions.
+**Note:** The project (*v1.3.4*) in its current state was made for my dad for at home use, specifically for iOS, which required some strange solutions, as iOS is not too supportive of progressive web apps. These might be removed when the app is standardized for all platforms in later versions.
 
 
 ## Installation
